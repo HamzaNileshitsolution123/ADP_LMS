@@ -1,0 +1,133 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/static/style.css"> -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Homepage</title>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="flex-box">
+                <div class="logo">
+                    <a href="/">
+                        <h3>Burger <span class="yellow">King</span></h3>
+                    </a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/blog">Feature</a></li>
+                        <li><a href="/articel">Chef</a></li>
+                        <li><a href="/hamza">Menu</a></li>
+                        <li><a href="#">Booking</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <div class="container">
+            <div class="bannar_wrapper">
+                <h1>Best <span class="yellow">Quality</span> Ingredients</h1>
+                <p>
+                    Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris. <br> Vivamus egestas eleifend dui ac consequat at lectus in malesuada
+                </p>
+                <a href="#">
+                    <button class="btn1">View Menu</button>
+                </a>
+                <a href="#">
+                    <button class="btn2">Book Table</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="Book-a-table">
+        <div class="container">
+            <div class="book-a-table-wrapper">
+                <div class="flex-box">
+                    <div class="left-box">
+                        <span>Book A Table</span>
+                        <h2>Book Your Table For Private Dinners & Happy Hours</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi
+                            scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.</p>
+                    </div>
+                    <div class="right-box">
+                        <form action="#">
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email">
+                            <input type="tel" placeholder="Mobile">
+                            <input type="date" placeholder="Date">
+                            <input type="time" placeholder="Time">
+                            <select name="" id="">
+                                <option value="Guest" >Guest</option>
+                                <option value="Guest">1 Guest</option>
+                                <option value="Guest">2 Guest</option>
+                                <option value="Guest">3 Guest</option>
+                                <option value="Guest">4 Guest</option>
+                                <option value="Guest">5 Guest</option>
+                                <option value="Guest">6 Guest</option>
+                                <option value="Guest">7 Guest</option>
+                                <option value="Guest">8 Guest</option>
+                                <option value="Guest">9 Guest</option>
+                                <option value="Guest">10 Guest</option>
+                            </select>
+                            <button class="btn3">Book Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cooking">
+        <div class="container">
+            <div class="flex-box">
+                <div class="cooking-left">
+                    <img src="{% static 'img/about.jpg' %}" alt="">
+                </div>
+                <div class="cooking-right">
+                    <span>About Us</span>
+                    <h2>Cooking Since 1990</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque
+                        maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.</p>
+
+                    <button class="btn1">Book A Table</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $(window).on('scroll', function() {
+                if ($(window).scrollTop()) {
+                    $('nav').addClass('sticky');
+                } else {
+                    $('nav').removeClass('sticky');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
